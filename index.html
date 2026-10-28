@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="pt-PT">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Trilho Python</title>
+  <meta name="description" content="Aprende os básicos de Python com desafios curtos, XP e níveis.">
+  <meta name="color-scheme" content="light dark">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%234f46e5'/%3E%3Ctext x='16' y='21' font-family='monospace' font-size='13' font-weight='700' fill='white' text-anchor='middle'%3E%26lt;/%26gt;%3C/text%3E%3C/svg%3E">
+  <script>
+    /* aplica o tema antes de desenhar a página, para não piscar */
+    (function () {
+      try {
+        var s = JSON.parse(localStorage.getItem("trilho.estado.v1") || "{}");
+        if (s.theme === "light" || s.theme === "dark") document.documentElement.setAttribute("data-theme", s.theme);
+      } catch (e) {}
+    })();
+  </script>
+  <link rel="stylesheet" href="js/vendor/codemirror/codemirror.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip" href="#app">Saltar para o conteúdo</a>
+  <header id="topbar" class="topbar"></header>
+  <main id="app" class="main" tabindex="-1">
+    <noscript><p>Esta página precisa de JavaScript para funcionar.</p></noscript>
+  </main>
+  <footer class="footer">
+    <span>Trilho Python · uso formativo, não conta para a avaliação</span>
+    <a href="professor.html">Área do professor</a>
+  </footer>
+  <div id="modal-root"></div>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+  <script src="js/vendor/codemirror/codemirror.js"></script>
+  <script src="js/vendor/codemirror/python.js"></script>
+  <script src="js/data/helpers.js"></script>
+  <script src="js/data/mundos-1.js"></script>
+  <script src="js/data/mundos-2.js"></script>
+  <script src="js/data/mundos-3.js"></script>
+  <script src="js/data/index.js"></script>
+  <script src="js/check.js"></script>
+  <script src="js/progress.js"></script>
+  <script src="js/runner.js"></script>
+  <script src="js/editor.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

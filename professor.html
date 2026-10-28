@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="pt-PT">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Trilho Python · Professor</title>
+  <meta name="color-scheme" content="light dark">
+  <script>
+    (function () {
+      try {
+        var s = JSON.parse(localStorage.getItem("trilho.estado.v1") || "{}");
+        if (s.theme === "light" || s.theme === "dark") document.documentElement.setAttribute("data-theme", s.theme);
+      } catch (e) {}
+    })();
+  </script>
+  <link rel="stylesheet" href="js/vendor/codemirror/codemirror.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true">&lt;/&gt;</span><span class="brand-name">Trilho Python · Professor</span></a>
+    <a class="btn ghost" href="index.html">Voltar aos alunos</a>
+  </header>
+  <main id="prof" class="main" style="max-width:1100px"></main>
+  <footer class="footer"><span>Tudo é calculado neste navegador. Nenhum dado dos alunos sai deste computador.</span></footer>
+
+  <script src="js/vendor/codemirror/codemirror.js"></script>
+  <script src="js/vendor/codemirror/python.js"></script>
+  <script src="js/data/helpers.js"></script>
+  <script src="js/data/mundos-1.js"></script>
+  <script src="js/data/mundos-2.js"></script>
+  <script src="js/data/mundos-3.js"></script>
+  <script src="js/data/index.js"></script>
+  <script src="js/check.js"></script>
+  <script src="js/progress.js"></script>
+  <script src="js/professor.js"></script>
+</body>
+</html>

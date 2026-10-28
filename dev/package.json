@@ -1,0 +1,1 @@
+{"name":"trilho-python-dev","private":true,"version":"1.0.0","description":"Ferramentas de teste (nao e necessario para publicar o site)","dependencies":{"codemirror":"^5.65.18","jsdom":"^30.1.3","pyodide":"^314.0.7"}}
